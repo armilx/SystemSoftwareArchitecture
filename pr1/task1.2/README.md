@@ -31,13 +31,15 @@
 ### 3. Перевірте символи бібліотеки за допомогою nm або objdump
 
 #### 3.1 Аналіз nm -D /usr/lib/libm.so | grep erf
-Команда: `nm -D /usr/lib/libm.so | grep erf`
+Команда: `nm -D /usr/lib/aarch64-linux-gnu/libm.so.6 | grep erf`
 Результат: 
 <img width="1195" height="1345" alt="image" src="https://github.com/user-attachments/assets/2e6d06a2-ebe9-4974-94f7-1b5a725ebd56" />
 
 ### 4 Проаналізуйте залежності бібліотек за допомогою ldd або objdump -p.
 #### 4.1 Аналіз за допомогою ldd 
 Команда: `ldd /usr/lib/aarch64-linux-gnu/libm.so.6`
+<img width="1219" height="127" alt="image" src="https://github.com/user-attachments/assets/0d0af476-28d4-4828-bc2e-976b5e141d20" />
+
 
 ### 5 Скрипт автоматичного аналізу (Bash)
 #### Був написаний скрипт `scan_libs.sh`, який сканує директорію `/usr/lib`, знаходить усі .so файли та шукає в них функції `sin`, `cos`, `exp`.
