@@ -38,3 +38,11 @@
 ### 4 Проаналізуйте залежності бібліотек за допомогою ldd або objdump -p.
 #### 4.1 Аналіз за допомогою ldd 
 Команда: `ldd /usr/lib/aarch64-linux-gnu/libm.so.6`
+
+### 5 Скрипт автоматичного аналізу (Bash)
+#### Був написаний скрипт `scan_libs.sh`, який сканує директорію `/usr/lib`, знаходить усі .so файли та шукає в них функції `sin`, `cos`, `exp`.
+
+Код скрипта: Див. файл `scan_libs.sh` 
+Приклад роботи скрипта:
+<img width="1271" height="1061" alt="image" src="https://github.com/user-attachments/assets/52b87550-442c-4ac3-b5aa-cc4ad737a3be" />
+
