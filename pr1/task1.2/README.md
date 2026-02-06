@@ -30,7 +30,7 @@
 
 ### 3. Перевірте символи бібліотеки за допомогою nm або objdump
 
-#### 3.1 Аналіз nm -D /usr/lib/libm.so | grep erf
+#### 3.1 Аналіз nm 
 Команда: `nm -D /usr/lib/aarch64-linux-gnu/libm.so.6 | grep erf`
 Результат: 
 <img width="1195" height="1345" alt="image" src="https://github.com/user-attachments/assets/2e6d06a2-ebe9-4974-94f7-1b5a725ebd56" />
